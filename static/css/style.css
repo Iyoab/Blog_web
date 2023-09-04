@@ -1,0 +1,81 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('backgd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Header styles */  
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Logo styles */
+  .logo h1 {
+    font-size: 36px;
+    font-family: 'Cursive Font', cursive; 
+  }
+
+  .welcome-message {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to create space below the welcome message */
+    color :#fff
+}
+
+.navigation-buttons {
+  text-align: center; /* Center the buttons horizontally */
+}
+  
+  /* Navigation menu styles */
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 40px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  
+  /* Navigation buttons */
+  .navigation-buttons .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px auto; /* Center the buttons vertically and add margin to separate them */
+}
+  
+  /* Main content container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;  
+  }

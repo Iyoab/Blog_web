@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+
+{% load static %} <!-- Load static files tag -->
+
+
+{% block title %}Blog Posts{% endblock %}
+
+{% block content %}
+<h2>Blog Posts</h2>
+{% if message %}
+<p>{{ message }}</p>
+{% else %}
+<ul>
+    {% for post in posts %}
+    <li>
+        <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h3>
+        <p>{{ post.date_posted }}</p>
+        <p>{{ post.content }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
+

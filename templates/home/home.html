@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+
+{% load static %} <!-- Load static files tag -->
+
+{% block title %}Welcome to My Blog{% endblock %}
+
+{% block content %}
+<div class="welcome-message">
+    <h1>Welcome to Iyoab's Chronicles, the hottest blog on the block!</h1>
+    <p>Discover and share your thoughts on various topics. Create it, edit it, and share it!</p>
+</div>
+<div class="navigation-buttons">
+    <a href="{% url 'post_list' %}" class="btn">View Posts</a>
+    {% if not user.is_authenticated %}
+        <a href="{% url 'login' %}" class="btn">Login</a>
+        <a href="{% url 'signup' %}" class="btn">Sign Up</a>
+    {% else %}
+        <a href="{% url 'logout' %}" class="btn">Logout</a>
+    {% endif %}
+</div>
+{% endblock %}

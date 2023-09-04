@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+
+{% load static %} <!-- Load static files tag -->
+
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<h2>{{ post.title }}</h2>
+<p>{{ post.date_posted }}</p>
+<p>{{ post.content }}</p>
+{% endblock %}
